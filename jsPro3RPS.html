@@ -1,0 +1,38 @@
+<DOCTYPE html>
+    <html>
+        <head>
+
+        </head>
+        <body style="text-align: center">
+            <h1>JavaScript Project 3</h1>
+            <h2>Rock Paper Scissors Game</h2>
+
+            <style>
+                img{
+                    width:100;
+                    height:100;
+                }
+            </style>
+
+            <p> Your opponent chose: </p>
+            <img id="oppChoice" style="transform: rotate(180deg)">
+
+            <p> You chose: </p>
+            <img id="playerRock"     src="jsPro3RPSRock.png"     onclick="playerDecision('rock')">
+            <img id="playerPaper"    src="jsPro3RPSPaper.png"    onclick="playerDecision('paper')">
+            <img id="playerScissors" src="jsPro3RPSScissors.png" onclick="playerDecision('scissors')">
+
+            <br>
+            <button id="rpsShoot" onclick="playGame()">Shoot</button>
+
+            <p id="rpsResults"></p>
+
+            <!-- Project Switch Buttons -->
+            <button onclick="window.location.href='jsPro2Calculator.html'">Previous Project</button>
+            <button onclick="window.location.href='javascriptProject3.html'">Next Project</button>
+
+            <!-- JavaScript Link -->
+            <script src="jsPro3RPS.js"></script>
+        </body>
+    </html>
+</DOCTYPE>
