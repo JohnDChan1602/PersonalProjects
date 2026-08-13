@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body style="text-align:center;">
+        <!-- Main Interface -->
+        <h1>JavaScript Project 2</h1>
+        <h2>Simple Calculator</h2>
+
+        <!-- Calculator Textbox (User Input is Disabled) -->
+        <input style="padding:15px 45px; text-align:right;" type="text" id="calcBox" readonly>
+        
+        <!-- Buttons 1-3 (+ Add) -->
+        <br><br>
+        <button style="padding:15px 25px;" onclick="calcInput(1)">1</button>
+        <button style="padding:15px 25px;" onclick="calcInput(2)">2</button>
+        <button style="padding:15px 25px;" onclick="calcInput(3)">3</button>
+        <button style="padding:15px 25px;" onclick="calcInput('+')">+</button>
+
+        <!-- Buttons 4-6 (+ Subtract) -->
+        <br><br>
+        <button style="padding:15px 25px;" onclick="calcInput(4)">4</button>
+        <button style="padding:15px 25px;" onclick="calcInput(5)">5</button>
+        <button style="padding:15px 25px;" onclick="calcInput(6)">6</button>
+        <button style="padding:15px 25px;" onclick="calcInput('-')">-</button>
+
+        <!-- Buttons 7-9 (+ Multiply) -->
+        <br><br>
+        <button style="padding:15px 25px;" onclick="calcInput(7)">7</button>
+        <button style="padding:15px 25px;" onclick="calcInput(8)">8</button>
+        <button style="padding:15px 25px;" onclick="calcInput(9)">9</button>
+        <button style="padding:15px 25px;" onclick="calcInput('*')">*</button>
+
+        <!-- Buttons 0, Clear, Solution & Divide -->
+        <br><br>
+        <button style="padding:15px 25px;" onclick="calcInput(0)">0</button>
+        <button style="padding:15px;" onclick="calcClear()">CLR</button>
+        <button style="padding:15px 25px;" onclick="calcSolution()">=</button>
+        <button style="padding:15px 25px;" onclick="calcInput('/')">/</button>
+
+        <!-- Project Switch Buttons -->
+        <br><br>
+        <button onclick="window.location.href='jsPro1NumberGuess.html'">Previous Project</button>
+        <button onclick="window.location.href='javascriptProject3.html'">Next Project</button>
+
+        <!-- JavaScript Link -->
+        <script src="jsPro2Calculator.js"></script>
+    </body>
+</html>
