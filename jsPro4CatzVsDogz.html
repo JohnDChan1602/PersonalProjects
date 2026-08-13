@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        body{
+           background-image:   url(jsPro4CatzVsDogzBackground.jpg); 
+           height:             100vh;
+        }
+
+        .main{
+            display:            flex;
+            justify-content:    center;
+            align-items:        center;
+        }
+
+        .container{
+            background-color:   white;
+            margin:             10px;
+            padding:            30px;
+            border-radius:      10px;
+            width:              300px;
+            box-shadow:         0, 0, 10px, rgba(0,0,0,0.1);
+            display:            flex;
+            flex-direction:     column;
+            justify-content:    center;
+            align-items:        center;
+            font-size:          20px;
+            font-weight:        bold;
+            font-family:        'Roboto', sans-serif;
+        }
+
+        .msgContainer{
+            font-family:        'Roboto', sans-serif;
+            font-weight:        bold;
+            font-size:          20px;
+            color:              green;
+        }
+
+        .rowContainer{
+            display:            flex;
+        }
+
+        .gameContainer{
+            background-color:   pink;
+            border-radius:      10px;
+            width:              100px;
+            height:             100px;
+            margin:             10px;
+            box-shadow:         0, 0, 10px, rgba(0,0,0,0.1);
+        }
+
+        .gameContainer img{
+            width:              100px;
+            height:             100px;
+        }
+
+        .button{
+            margin:             10px;
+            background-color:   lightsalmon;
+            border:             none;
+            border-radius:      8px;
+            padding:            15px 32px;
+            color:              white;
+            font-size:          14px;
+            font-weight:        bold;
+            font-family:        'Roboto',sans-serif;
+        }
+
+        </style>
+    </head>
+    <body>
+
+        <h1 style="text-align: center">CATZ VS DOGZ</h1>
+
+        <div class="main">
+
+        <!-- Player Score Container -->
+        <div class="container">
+            <p>CATS</p>
+            <p id="playerScore">0</p>
+        </div>
+        
+        <!-- Main Gameplay Container -->
+        <div class="container">
+            
+            <p class="msgContainer" id="message">PLAYER'S TURN</p>
+            
+            <!-- First Row -->
+            <div class="rowContainer">
+                <div class="gameContainer" onclick="playerAction(0)">
+                    <img id="sq0">
+                </div>
+                <div class="gameContainer" onclick="playerAction(1)">
+                    <img id="sq1">
+                </div>
+                <div class="gameContainer" onclick="playerAction(2)">
+                    <img id="sq2">
+                </div>
+            </div>
+            
+            <!-- Second Row -->
+            <div class="rowContainer">
+                <div class="gameContainer" onclick="playerAction(3)">
+                    <img id="sq3">
+                </div>
+                <div class="gameContainer" onclick="playerAction(4)">
+                    <img id="sq4">
+                </div>
+                <div class="gameContainer" onclick="playerAction(5)">
+                    <img id="sq5">
+                </div>
+            </div>
+            
+            <!-- Third Row -->
+            <div class="rowContainer">
+                <div class="gameContainer" onclick="playerAction(6)">
+                    <img id="sq6">
+                </div>
+                <div class="gameContainer" onclick="playerAction(7)">
+                    <img id="sq7">
+                </div>
+                <div class="gameContainer" onclick="playerAction(8)">
+                    <img id="sq8">
+                </div>
+            </div>
+
+            <button class="button" id="buttonReset" onclick="gameReset()">PLAY AGAIN?</button>
+        
+        </div>
+
+        <!-- Opponent Score Container -->
+        <div class="container">
+            <p>DOGS</p>
+            <p id="oppScore">0</p>
+        </div>
+
+        </div>
+
+        <!-- JavaScript Link -->
+        <script src="jsPro4CatzVsDogz.js"></script>
+    </body>
+</html>
